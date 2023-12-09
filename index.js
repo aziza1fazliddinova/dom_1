@@ -13,7 +13,7 @@ let a = 0
 
 btn1.addEventListener("click", () => {
     if (a > 0) {
-        a--;
+        a--
         box.textContent = a
     }
 })
@@ -24,13 +24,11 @@ btn2.addEventListener("click", () => {
 })
 
 btn3.addEventListener("click", () => {
-    if (a < 10000) {
-        a++
-        box.textContent = a
-    }
+    a++
+    box.textContent = a
 })
 
 btn4.addEventListener("click", () => {
-    a = Math.floor(Math.random() * 10000) + 1
+    a = Math.floor(Math.random()*100) + 1
     box.textContent = a
 })
